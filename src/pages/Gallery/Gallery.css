@@ -1,0 +1,7 @@
+.gallery_card-block {
+    display: grid;
+    grid-gap: 15px;
+    justify-items: center;
+    align-items: center;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+}
