@@ -1,1 +1,0 @@
-# gercogor.github.io
