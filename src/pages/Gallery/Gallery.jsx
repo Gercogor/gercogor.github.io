@@ -1,58 +1,66 @@
 import React, {useEffect, useState} from 'react';
-import {Tab, Tabs} from "react-bootstrap";
-import CardPiece from "../../UI/Card/Card";
+import {Spinner, Tab, Tabs} from "react-bootstrap";
 
 import './Gallery.css'
-import axios from "axios";
-import CardBlock from "../../UI/CardBlock/CardBlock";
-import PhotoService from "../../API/photos";
+import CardBlockPhoto from "../../UI/CardBlock/CardBlockPhoto";
+import CardBlockSW from "../../UI/CardBlock/CardBlockSW";
+import PhotoService from "../../API/fetch";
 
 const Gallery = () => {
 
     const [photos, setPhotos] = useState([])
-    const [photosIsLoading, setPhotosIsLoading] = useState(true)
+    const [cardSW, setCardSW] = useState([])
+
+    async function fetchSW() {
+        const responseSW = await PhotoService.getAll();
+        setTimeout(() => {
+            if (responseSW?.data) {
+                setCardSW(responseSW.data.results)
+            }
+        }, 2000)
+    }
 
     async function fetchPhotos() {
-        // setPhotosIsLoading(true);
-        const response = await PhotoService.getAll();
+        const responsePhoto = await PhotoService.getPhotos();
+        setTimeout(() => {
+            if (responsePhoto?.data) {
+                setPhotos(responsePhoto.data)
+            }
+        }, 2000)
 
-        // const response = await axios.get('https://jsonplaceholder.typicode.com/album/1/photos');
-
-        if (response?.data) {
-            setPhotos(response.data.results)
-        }
     }
 
     useEffect(() => {
+        fetchSW();
         fetchPhotos();
     }, []);
 
     return (
         <div className='gallery-wrapper'>
             {/*<button onClick={fetchPhotos}>manually get fetch</button>*/}
-            <Tabs defaultActiveKey="cat" id="uncontrolled-tab-example" className="mb-3">
-                <Tab eventKey="cat" title="Cat">
+            <Tabs defaultActiveKey="StarWars-1" id="uncontrolled-tab-example" className="mb-3">
+                <Tab eventKey="PhotoPack-1" title="PhotoPack 1">
                     {photos.length === 0
-                        ? <div>LOAD</div>
-                        : <CardBlock photos={photos} id={1} toView={[0, 1, 2]}/>
+                        ? <Spinner className='loading-spinner' animation="border" variant="primary"/>
+                        : <CardBlockPhoto items={photos} id={1} toView={[0, 1, 2, 3, 4, 5]}/>
                     }
                 </Tab>
-                <Tab eventKey="dog" title="Dog">
+                <Tab eventKey="PhotoPack-2" title="PhotoPack 2">
                     {photos.length === 0
-                        ? <div>LOAD</div>
-                        : <CardBlock photos={photos} id={2} toView={[3, 4, 5]}/>
+                        ? <Spinner className='loading-spinner' animation="border" variant="primary"/>
+                        : <CardBlockPhoto items={photos} id={2} toView={[6, 7, 8, 9, 10, 11]}/>
                     }
                 </Tab>
-                <Tab eventKey="rat" title="Rat">
-                    {photos.length === 0
-                        ? <div>LOAD</div>
-                        : <CardBlock photos={photos} id={3} toView={[6, 7, 8]}/>
+                <Tab eventKey="StarWars-1" title="StarWars characters 1">
+                    {cardSW.length === 0
+                        ? <Spinner className='loading-spinner' animation="grow" variant="success"/>
+                        : <CardBlockSW items={cardSW} id={3} toView={[0, 1, 2, 3, 4, 5]}/>
                     }
                 </Tab>
-                <Tab eventKey="houses" title="Houses">
-                    {photos.length === 0
-                        ? <div>LOAD</div>
-                        : <CardBlock photos={photos} id={4} toView={[9, 10, 11]}/>
+                <Tab eventKey="StarWars-2" title="StarWars characters 2">
+                    {cardSW.length === 0
+                        ? <Spinner className='loading-spinner' animation="grow" variant="success"/>
+                        : <CardBlockSW items={cardSW} id={4} toView={[6, 7, 8, 9, 10]}/>
                     }
                 </Tab>
             </Tabs>

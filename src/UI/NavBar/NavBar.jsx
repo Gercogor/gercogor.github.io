@@ -7,7 +7,7 @@ const NavBar = () => {
         <nav>
             <Navbar bg="light" expand={false}>
                 <Container fluid>
-                    <Navbar.Brand>Test</Navbar.Brand>
+                    <Navbar.Brand>Gallery</Navbar.Brand>
                     <Navbar.Toggle aria-controls="offcanvasNavbar"/>
                     <Navbar.Offcanvas
                         id="offcanvasNavbar"
@@ -19,8 +19,8 @@ const NavBar = () => {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Link to='/'>Gallery</Link>
-                                <Link to='/about'>About</Link>
+                                <Link className='nav-link' to='/'>Gallery</Link>
+                                <Link className='nav-link' to='/about'>About</Link>
                             </Nav>
                             <hr/>
                             <Figure>
@@ -30,7 +30,7 @@ const NavBar = () => {
                                     alt="171x180"
                                     src="https://miro.medium.com/max/1000/1*Yafu7ihc1LFuP4azerAa4w.png"
                                 />
-                                <Figure.Caption>
+                                <Figure.Caption style={{textAlign:'center'}}>
                                     My avatar and my name.
                                 </Figure.Caption>
                             </Figure>

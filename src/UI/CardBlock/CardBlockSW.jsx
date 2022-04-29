@@ -1,13 +1,13 @@
 import React from 'react';
-import CardPiece from "../Card/Card";
+import CardPiece from "../CardPiece/CardPiece";
 
-const CardBlock = ({photos, id, toView}) => {
+const CardBlockSW = ({items, id, toView}) => {
     return (
         <div id={id} className="gallery_card-block">
-            {photos.map((elem, i) => {
+            {items.map((elem, i) => {
                     if (toView.includes(i)) {
                         return (
-                            <CardPiece id={i+1} key={i} title={elem.name} src={elem.gender}/>
+                            <CardPiece fromSW={true} id={i+1} key={i} title={elem.name} src={elem.gender}/>
                         )
                     }
                 }
@@ -16,4 +16,4 @@ const CardBlock = ({photos, id, toView}) => {
     );
 };
 
-export default CardBlock;
+export default CardBlockSW;

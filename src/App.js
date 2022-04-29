@@ -7,9 +7,10 @@ import {
     Route,
 } from "react-router-dom";
 import Gallery from "./pages/Gallery/Gallery";
-import GalleryCard from "./pages/GalleryCard/GalleryCard";
-import AboutMe from "./pages/AboutMe/AboutMe";
+import GalleryCardSW from "./pages/GalleryCard/GalleryCardSW";
+import AboutMe from "./pages/AboutMe/About";
 import Page404 from "./pages/404Page/404Page";
+import GalleryCardPhoto from "./pages/GalleryCard/GalleryCardPhoto";
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
                 <NavBar/>
                 <Routes>
                     <Route path="/" element={<Gallery/>}/>
-                    <Route path="/card/:id" element={<GalleryCard/>}/>
+                    <Route path="/card/:id" element={<GalleryCardSW/>}/>
+                    <Route path="/photo/:id" element={<GalleryCardPhoto/>}/>
                     <Route path="/about" element={<AboutMe/>}/>
                     <Route path="*" element={<Page404/>}/>
                 </Routes>

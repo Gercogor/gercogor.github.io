@@ -1,7 +1,13 @@
 .gallery_card-block {
-    display: grid;
-    grid-gap: 15px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 950px;
     justify-items: center;
     align-items: center;
-    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    margin: 0 auto;
+}
+
+.loading-spinner {
+    margin: 10% 50%;
 }
