@@ -21,6 +21,7 @@ const NavBar = () => {
                             <Nav className="justify-content-end flex-grow-1 pe-3">
                                 <Link className='nav-link' to='/'>Gallery</Link>
                                 <Link className='nav-link' to='/about'>About</Link>
+                                <Link className='nav-link' to='/compare'>Compare</Link>
                             </Nav>
                             <hr/>
                             <Figure>

@@ -11,6 +11,7 @@ import GalleryCardSW from "./pages/GalleryCard/GalleryCardSW";
 import AboutMe from "./pages/AboutMe/About";
 import Page404 from "./pages/404Page/404Page";
 import GalleryCardPhoto from "./pages/GalleryCard/GalleryCardPhoto";
+import ComparePage from "./pages/ComparePage/ComparePage";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                     <Route path="/card/:id" element={<GalleryCardSW/>}/>
                     <Route path="/photo/:id" element={<GalleryCardPhoto/>}/>
                     <Route path="/about" element={<AboutMe/>}/>
+                    <Route path="/compare" element={<ComparePage/>}/>
                     <Route path="*" element={<Page404/>}/>
                 </Routes>
             </BrowserRouter>
