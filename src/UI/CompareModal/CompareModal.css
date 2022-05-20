@@ -1,0 +1,38 @@
+.compare-modal_wrapper{
+    position: relative;
+}
+.compare-modal {
+    position: absolute;
+    left: 1%;
+    width: 320px;
+    height: 270px;
+    background: aqua;
+    overflow: auto;
+    visibility: hidden;
+}
+
+.compare-modal_inner {
+    padding: 20px 40px 10px 10px;
+}
+
+.compare-modal_item {
+    display: grid;
+    grid-template-columns: repeat(2, 30px) 1fr;
+    margin-top: 20px;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 20px;
+}
+
+.compare-modal_pic{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.compare-modal_model{
+    justify-self: start;
+}
+
+.compare-modal_add-compare{
+    cursor: pointer;
+}

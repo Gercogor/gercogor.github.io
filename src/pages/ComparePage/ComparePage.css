@@ -1,0 +1,23 @@
+.compare__header {
+    max-width: 1240px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.compare__header-num-change {
+    display: inherit;
+}
+
+.compare__header-count {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    gap: 20px;
+    list-style-type: none;
+}
+.compare__header-count>li {
+    cursor: pointer;
+    margin: 0;
+}
