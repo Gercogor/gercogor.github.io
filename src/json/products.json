@@ -111,6 +111,36 @@
       "videoId": "MPWtrlGq6n0",
       "Price": "$$$",
       "url": "/img/amazfit-verge.png"
+    },
+    {
+      "Model": "Amazfit Stratos 5",
+      "Screen": "LCD 1.34 Inch",
+      "Resolution": "320 x 300",
+      "Memory": "512MB Ram, 4GB Internal",
+      "Connectivity": "Bluetooth, GPS, Wifi, USB",
+      "Battery": "280mAh – Up to 5 Days",
+      "Sensors": "Heart Rate Sensor, Accelerometer, Gyro, Barometer, Compass",
+      "Tracking": "Steps, Calories, Heart Rate, Distance, Speed, Sleep Quality",
+      "Notifications": "Yes – Vibration Feedback and On Screen Alerts",
+      "WaterResistance": "50m",
+      "videoId": "mhN2F51x0Vg",
+      "Price": "$$$",
+      "url": "/img/amazfit-stratos.png"
+    },
+    {
+      "Model": "Amazfit Stratos 6",
+      "Screen": "LCD 1.34 Inch",
+      "Resolution": "320 x 300",
+      "Memory": "512MB Ram, 4GB Internal",
+      "Connectivity": "Bluetooth, GPS, Wifi, USB",
+      "Battery": "280mAh – Up to 5 Days",
+      "Sensors": "Heart Rate Sensor, Accelerometer, Gyro, Barometer, Compass",
+      "Tracking": "Steps, Calories, Heart Rate, Distance, Speed, Sleep Quality",
+      "Notifications": "Yes – Vibration Feedback and On Screen Alerts",
+      "WaterResistance": "50m",
+      "videoId": "mhN2F51x0Vg",
+      "Price": "$$$",
+      "url": "/img/amazfit-stratos.png"
     }
   ]
 }

@@ -6,6 +6,12 @@
     align-items: center;
 }
 
+.compare__main,
+.compare__table {
+    max-width: 1240px;
+    margin: 15px auto;
+}
+
 .compare__header-num-change {
     display: inherit;
 }
@@ -20,4 +26,31 @@
 .compare__header-count>li {
     cursor: pointer;
     margin: 0;
+}
+
+.compare__table-body:first-child {
+    border: none;
+}
+
+.table__row {
+    max-width: 1240px;
+}
+
+.table__row-head{
+    width: 120px;
+    height: 50px;
+    font-weight: bold;
+    border-top: 1px solid gray;
+}
+
+.table__row-cell{
+    width: 180px;
+    height: 50px;
+    max-height: 200px;
+    text-align: center;
+    border-top: 1px solid gray;
+}
+
+.table__row-cell_border {
+    border: none;
 }
