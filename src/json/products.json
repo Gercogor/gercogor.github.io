@@ -65,7 +65,8 @@
       "WaterResistance": "50m",
       "videoId": "mhN2F51x0Vg",
       "Price": "$$$",
-      "url": "/img/amazfit-stratos.png"
+      "url": "/img/amazfit-stratos.png",
+      "vcode":"1"
     },
     {
       "Model": "Amazfit Pace",
@@ -80,7 +81,8 @@
       "WaterResistance": "IP67 - Splash Resistant",
       "videoId": "jt_OBSn4j6Q",
       "Price": "$$$",
-      "url": "/img/amazfit-pace.png"
+      "url": "/img/amazfit-pace.png",
+      "vcode":"2"
     },
     {
       "Model": "Amazfit Bip",
@@ -95,7 +97,8 @@
       "WaterResistance": "IP68",
       "videoId": "cIjH7py0fcY",
       "Price": "$$$",
-      "url": "/img/amazfit-bip.png"
+      "url": "/img/amazfit-bip.png",
+      "vcode":"3"
     },
     {
       "Model": "Amazfit Verge",
@@ -110,7 +113,8 @@
       "WaterResistance": "Up to 1 meter (or 3.3 feet) for up to 30 mins",
       "videoId": "MPWtrlGq6n0",
       "Price": "$$$",
-      "url": "/img/amazfit-verge.png"
+      "url": "/img/amazfit-verge.png",
+      "vcode":"4"
     },
     {
       "Model": "Amazfit Stratos 5",
@@ -125,7 +129,8 @@
       "WaterResistance": "50m",
       "videoId": "mhN2F51x0Vg",
       "Price": "$$$",
-      "url": "/img/amazfit-stratos.png"
+      "url": "/img/amazfit-stratos.png",
+      "vcode":"5"
     },
     {
       "Model": "Amazfit Stratos 6",
@@ -140,7 +145,8 @@
       "WaterResistance": "50m",
       "videoId": "mhN2F51x0Vg",
       "Price": "$$$",
-      "url": "/img/amazfit-stratos.png"
+      "url": "/img/amazfit-stratos.png",
+      "vcode":"6"
     }
   ]
 }
